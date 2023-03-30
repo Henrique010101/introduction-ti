@@ -1,0 +1,170 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@200;300;600&family=Mukta:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F1F1;
+    --cor-terciaria: #32CD32;
+    --cor-quarternaria: #006400;
+    --cor-houver: #272727;
+    
+    --fonte-primeira: 'krona one', sans-serif;
+    --fonte-segunda: 'Montserrat', sans-serif;
+    --fonte-terceira:'Mukta', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    color: var(--cor-secundaria); 
+    background-color: var(--cor-primaria); 
+    padding: 0% 12% 0% 12% ;
+    background-clip: padding-box;
+    background-image: url("/assets/fotofundo.jpg");
+    background-size: 50%;
+    background-repeat: repeat;
+}
+.cabecalho {    
+    padding: 2% 0 0 8%;
+    background-color: var(--cor-primaria);
+}
+
+.cabecalho_menu {
+    display: flex;
+    gap: 80px; 
+}
+
+.cabecalho_link {
+    font-family: var(--fonte-segunda);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-quarternaria);
+    text-decoration: none;
+}
+
+.corpo {
+    display: flex;
+    align-items: center;
+    
+    padding: 6% 5% 17% 5%;
+    justify-content: space-between;
+    background-color: var(--cor-primaria);
+}
+
+.especialidades {
+    color: var(--cor-terciaria);
+    font-weight: 600;
+}
+
+.estrutura_corpo {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.corpo_titulo {
+    font-size: 2rem;
+    font-family: var(--fonte-segunda);
+}
+.destaque-titulo {
+    color: #32CD32;
+}
+
+  .corpo_paragrafo {
+        font-size: 1.375rem;
+        font-family: var(--fonte-segunda);
+        font-weight: 500;
+    }
+ .sub_titulo {
+        font-family: var(--fonte-primeira);
+        font-weight: 500;
+        font-size: 1.25rem;
+}
+
+ .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 28px;
+        
+}
+
+.links_botao {
+        display: flex;
+        justify-content: center;
+        gap: 13px;
+        width: 50%;
+        height: 50%;
+        text-align: center;
+        color: var(--cor-secundaria);
+        border-radius: 16px;
+        border: 2px solid var(--cor-terciaria);
+        padding: 20px 0;
+        font-family: var(--fonte-);
+        font-size: 1.25rem;
+        font-weight: 600;
+        text-decoration: none;
+        
+}
+
+ #foto_henrique {
+        border-radius: 16px;
+        border: 3px solid var(--cor-terciaria);
+        width: 38%;
+        height: 38%;
+}
+
+.links_botao:hover{
+        background-color: var(--cor-houver);
+        color: var(--cor-secundaria);
+        padding: 20px;
+}
+
+.roda-pe {
+        background: var(--cor-quarternaria);
+        color: var(--cor-primaria);
+        text-align: center;
+        font-family: var(--fonte-segunda);
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding: 15px;
+}
+.estilos-fotos-concurso {
+    padding: 0% 25% 0% 25%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.diplomas {
+    width: 110%;
+    height: 110%;
+}
+@media (max-width: 1031px) {
+    .cabecalho {
+        padding: 10%;
+    }
+    .cabecalho_menu {
+        justify-content: center;
+    }
+
+    .corpo{
+        flex-direction: column-reverse;
+    }
+    .estrutura_corpo {
+        width: auto;
+        height: auto;
+    }
+}
+@media (max-width: 800px) {
+    .links_botao {
+        padding: 31px;
+    }
+    .corpo {
+        padding: 5% 5% 7% 5%;
+    }
+}
